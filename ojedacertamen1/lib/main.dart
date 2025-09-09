@@ -1,6 +1,7 @@
 //Certamen 1 Desarrollo de aplicaciones moviles
 //09/09/2025
 //Ignacio Ojeda B
+//Referencia - Imagen 5
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,20 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-//Imagen 5
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 7, 186, 240)
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.lightBlue,
+            foregroundColor: Colors.white,
+          )
+        )
+      ),
     home: Scaffold(
        appBar: AppBar( //Top Bar
         leading: const Icon(Icons.menu), //menu icono
@@ -21,7 +32,7 @@ class MyApp extends StatelessWidget {
               body: ListView( //Vista de "listview"
                 children:[
 
-            const SizedBox(height:8.0), //espacio 8px
+            const SizedBox(height:24.0), //espacio 24px
 
             Container( //Primer container de rating general
               height: 25.0, //Altura de 75 px
@@ -50,10 +61,10 @@ class MyApp extends StatelessWidget {
               child: const Text('46 Calificaciones')
             ),
 
-            const SizedBox(height:12.0), //espacio 12px
+            const SizedBox(height:24.0), //espacio 24px
 
             Container( //4to Container - Puntuaciones
-              height: 148, //altura 148px
+              height: 216, //altura 216px
               width: double.infinity, //infinito ancho
               color: Colors.lightBlue, //color azul claro
               child: const Text(''),
@@ -64,29 +75,17 @@ class MyApp extends StatelessWidget {
               width: double.infinity, //infinito ancho
               color: const Color.fromARGB(255, 207, 207, 207), //color azul claro
               child: const Text(''),
-            ),
-
-                Container( //Row para simular boton azul
-              height: 45.0,
-              color: Colors.transparent,
-              child: Row(children: [
-                Expanded(
-                  child: Container(
-                    color: Colors.transparent,
-                  ),
-                  ),
-
-                  const SizedBox(width: 0.0),
-                  Expanded( //container row2
-                  child: Container(
-                    color: Colors.lightBlue,
-                  ),
-                  ),
-                  
-              ],
+            ),      
+            
+             ListTile( //ListTile para boton de filtros
+              title: const Text('Todo'),
+              trailing: ElevatedButton(
+                
+                onPressed: () {},
+                child: const Text('Los mas utiles')
               )
             ),
-            ////////////////////////PROGRESS BAR
+        
      Container( //Aqui estoy simulando las separaciones, solucion temporal (en teoria)
               height: 2.0, //altura 2px
               width: double.infinity, //infinito ancho
@@ -119,7 +118,9 @@ class MyApp extends StatelessWidget {
               height: 512, //altura 512px
               width: double.infinity, //infinito ancho
               color: Colors.transparent, //color azul claro
-              child: const Text('cumple e seu papel'),
+              child: const Text('cumple e seu papel, mas deixou a desejar em alguns detalhes, nada que deixe de valer a pena a compra. A luz de recarga fica coberta pela capinha, impossibilitando a visualizacao sem tirar parcialmente ou afastar a capinha da caixa do fone'),
+            
+ 
             ),
 ///////////PROGRESS BAR!
           ]
