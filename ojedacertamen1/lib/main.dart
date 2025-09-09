@@ -13,20 +13,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
+      theme: ThemeData( //Estilizacion y tema
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 7, 186, 240)
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.lightBlue,
-            foregroundColor: Colors.white,
+            backgroundColor: Colors.lightBlue, //Color azul para los botones
+            foregroundColor: Colors.white, //Color de foreground en blanco
           )
         )
       ),
-    home: Scaffold(
+    home: Scaffold( //El scaffold...
        appBar: AppBar( //Top Bar
-        leading: const Icon(Icons.menu), //menu icono
+        leading: const Icon(Icons.arrow_back), //Icono de back arrow
         title: const Text('Calificaciones del articulo'), //Titulo de la top bar
        ),
               body: ListView( //Vista de "listview"
@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
              Container( //Aqui estoy simulando las separaciones, solucion temporal (en teoria)
               height: 2.0, //altura 2px
               width: double.infinity, //infinito ancho
-              color: const Color.fromARGB(255, 207, 207, 207), //color azul claro
+              color: const Color.fromARGB(255, 207, 207, 207), //
               child: const Text(''),
             ),      
             
