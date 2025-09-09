@@ -75,12 +75,11 @@ class MyApp extends StatelessWidget {
               width: double.infinity, //infinito ancho
               color: const Color.fromARGB(255, 207, 207, 207), //
               child: const Text(''),
-            ),      
+            ),
             
              ListTile( //ListTile para boton de filtros
               title: const Text('Todo'),
-              trailing: ElevatedButton(
-                
+              trailing: ElevatedButton( // boton filtro
                 onPressed: () {},
                 child: const Text('Los mas utiles')
               )
@@ -122,6 +121,17 @@ class MyApp extends StatelessWidget {
             
  
             ),
+               Container( //Aqui estoy simulando las separaciones
+              height: 2.0, //altura 2px
+              width: double.infinity, //infinito ancho
+              color: const Color.fromARGB(255, 207, 207, 207), //
+              child: const Text(''),
+            ),
+
+             ListTile( //ListTile para bottombar
+              title: const Text('Bottom bar'),
+            ),
+
 ///////////PROGRESS BAR!
           ]
         )
