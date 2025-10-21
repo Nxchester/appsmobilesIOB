@@ -3,55 +3,57 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppTheme {
-  // Tema claro
-  static ThemeData lightTheme = FlexThemeData.light(
-    scheme: FlexScheme.dellGenoa,
-    surfaceMode: FlexSurfaceMode.levelSurfacesLowScaffold,
-    blendLevel: 7,
-    lightIsWhite: true,
+/// The [AppTheme] defines light and dark themes for the app.
+///
+/// Theme setup for FlexColorScheme package v8.
+/// Use same major flex_color_scheme package version. If you use a
+/// lower minor version, some properties may not be supported.
+/// In that case, remove them after copying this theme to your
+/// app or upgrade the package to version 8.3.0.
+///
+/// Use it in a [MaterialApp] like this:
+///
+/// MaterialApp(
+///   theme: AppTheme.light,
+///   darkTheme: AppTheme.dark,
+/// );
+abstract final class AppTheme {
+  // The FlexColorScheme defined light mode ThemeData.
+  static ThemeData light = FlexThemeData.light(
+    // Using FlexColorScheme built-in FlexScheme enum based colors
+    scheme: FlexScheme.shadRed,
+    // Component theme configurations for light mode.
     subThemesData: const FlexSubThemesData(
-      blendOnLevel: 10,
-      useM2StyleDividerInM3: true,
-      alignedDropdown: true,
-      useInputDecoratorThemeInDialogs: true,
       interactionEffects: true,
       tintedDisabledControls: true,
+      useM2StyleDividerInM3: true,
       inputDecoratorIsFilled: true,
       inputDecoratorBorderType: FlexInputBorderType.outline,
+      alignedDropdown: true,
       navigationRailUseIndicator: true,
     ),
+    // Direct ThemeData properties.
     visualDensity: FlexColorScheme.comfortablePlatformDensity,
-    useMaterial3: true,
-    swapLegacyOnMaterial3: true,
     cupertinoOverrideTheme: const CupertinoThemeData(applyThemeToAll: true),
-    fontFamily: GoogleFonts.notoSans().fontFamily,
   );
 
-  // Tema oscuro
-  static ThemeData darkTheme = FlexThemeData.dark(
-    scheme: FlexScheme.dellGenoa,
-    surfaceMode: FlexSurfaceMode.levelSurfacesLowScaffold,
-    blendLevel: 13,
+  // The FlexColorScheme defined dark mode ThemeData.
+  static ThemeData dark = FlexThemeData.dark(
+    // Using FlexColorScheme built-in FlexScheme enum based colors.
+    scheme: FlexScheme.shadRed,
+    // Component theme configurations for dark mode.
     subThemesData: const FlexSubThemesData(
-      blendOnLevel: 20,
-      useM2StyleDividerInM3: true,
-      alignedDropdown: true,
-      useInputDecoratorThemeInDialogs: true,
       interactionEffects: true,
       tintedDisabledControls: true,
       blendOnColors: true,
+      useM2StyleDividerInM3: true,
       inputDecoratorIsFilled: true,
       inputDecoratorBorderType: FlexInputBorderType.outline,
+      alignedDropdown: true,
       navigationRailUseIndicator: true,
     ),
+    // Direct ThemeData properties.
     visualDensity: FlexColorScheme.comfortablePlatformDensity,
-    useMaterial3: true,
-    swapLegacyOnMaterial3: true,
     cupertinoOverrideTheme: const CupertinoThemeData(applyThemeToAll: true),
-    fontFamily: GoogleFonts.notoSans().fontFamily,
   );
-
-  // En caso de querer usar el tema por defecto del sistema
-  // static ThemeMode themeMode = ThemeMode.system;
 }

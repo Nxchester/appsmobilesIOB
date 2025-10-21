@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
           duration: const Duration(milliseconds: 500),
           opacity: opacity,
           child: Text(
-            'Soy el Splashscreen',
+            'Move it up move it up, Its a Breach!',
             style: TextStyle(
               fontSize: 24,
               color: Theme.of(context).colorScheme.onPrimary,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-
 import 'package:breach/main.dart'; // Para HomeScreen
 
 class LoginScreen extends StatefulWidget {
@@ -21,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
       await GoogleSignIn.instance.initialize();
 
       final googleUser = await GoogleSignIn.instance.authenticate();
-      if (googleUser == null) return null;
+      if (googleUser == false) return null;
 
       final googleAuth = await googleUser.authentication;
 
