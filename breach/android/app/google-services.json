@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742928299271",
+    "project_id": "breach21-5343a",
+    "storage_bucket": "breach21-5343a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742928299271:android:e27c76b0bd9b9db1a281a2",
+        "android_client_info": {
+          "package_name": "com.example.breach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKvxPOJus5-n5E2wc3NkK9tc7AO76XpkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
