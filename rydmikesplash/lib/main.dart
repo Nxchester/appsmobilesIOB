@@ -5,11 +5,11 @@ import 'package:rydmikesplash/screens/chats.dart'; // Importa el archivo chats.d
 import 'package:rydmikesplash/theme/theme.dart'; // Importa el tema
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {

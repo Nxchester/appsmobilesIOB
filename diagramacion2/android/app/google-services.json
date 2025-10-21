@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572329494355",
+    "project_id": "arcadia-9fd34",
+    "storage_bucket": "arcadia-9fd34.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572329494355:android:6045beae58966ab2a443a6",
+        "android_client_info": {
+          "package_name": "com.example.diagramacion2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdz_0TlRa3QY61kVb98ESblEkxlrJ-TRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
