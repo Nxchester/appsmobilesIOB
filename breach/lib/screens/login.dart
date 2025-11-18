@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+
 import 'package:breach/main.dart'; // Para HomeScreen
 
 class LoginScreen extends StatefulWidget {
@@ -20,9 +21,10 @@ class _LoginScreenState extends State<LoginScreen> {
       await GoogleSignIn.instance.initialize();
 
       final googleUser = await GoogleSignIn.instance.authenticate();
+      // ignore: unrelated_type_equality_checks
       if (googleUser == false) return null;
 
-      final googleAuth = await googleUser.authentication;
+      final googleAuth = googleUser.authentication;
 
       final credential = GoogleAuthProvider.credential(
         idToken: googleAuth.idToken,
@@ -84,7 +86,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                         textStyle: const TextStyle(fontSize: 16),
                       ),
-                      icon: const Icon(Icons.login),
+                      icon: Image.asset(
+                        'assets/google.png',
+                        height: 24,
+                        width: 24,
+                      ),
                       label: const Text("Iniciar con Google"),
                       onPressed: _login,
                     ),

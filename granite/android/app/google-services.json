@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364696924711",
+    "project_id": "granite-3d9f9",
+    "storage_bucket": "granite-3d9f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364696924711:android:0414c7b69652607ea5d402",
+        "android_client_info": {
+          "package_name": "com.example.granite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwPcfMENXL_a2ecsGge1ZfcKFVohmEfV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

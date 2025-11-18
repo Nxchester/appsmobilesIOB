@@ -12,7 +12,20 @@
           "package_name": "com.example.breach"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "742928299271-m31ktq236r3jmcceu5a4ufkr86khdm74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.breach",
+            "certificate_hash": "8eeb0d5bb08a24d230aed1d3112cef4ba5892bc5"
+          }
+        },
+        {
+          "client_id": "742928299271-jhmpmd45obakevdvb9498pd3h1pmjrmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCKvxPOJus5-n5E2wc3NkK9tc7AO76XpkM"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742928299271-jhmpmd45obakevdvb9498pd3h1pmjrmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
